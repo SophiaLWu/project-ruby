@@ -14,3 +14,23 @@ def sum(arr)
     end
     sum
 end
+
+def multiply(x, *arr)
+    result = x
+    arr.each do |num|
+        result *= num
+    end
+    result
+end
+
+def power(x, y)
+    x**y
+end
+
+def factorial(num)
+    result = 1
+    num.downto(1) do |x|
+        result *= x
+    end
+    result
+end
